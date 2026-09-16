@@ -6,7 +6,14 @@
 /*   By: betdemir@student.42istanbul.com.tr         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/13 16:58:04 by betdemir          #+#    #+#             */
-/*   Updated: 2026/09/13 16:58:05 by betdemir         ###   ########.fr       */
+/*   Updated: 2026/09/16 20:50:08 by betdemir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "ft_printf.h"
+
+int	ft_print_char(int n)
+{
+	write(1, &n, 1);
+	return (1);
+}

@@ -1,19 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_percent.c                                 :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: betdemir@student.42istanbul.com.tr         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/09/13 16:57:58 by betdemir          #+#    #+#             */
-/*   Updated: 2026/09/16 20:58:28 by betdemir         ###   ########.fr       */
+/*   Created: 2026/09/16 21:04:50 by betdemir          #+#    #+#             */
+/*   Updated: 2026/09/16 21:07:16 by betdemir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	ft_print_percent()
+size_t	ft_strlen(char *n)
 {
-	write(1, "%", 1);
-	return (1);
+	size_t	i;
+
+	i = 0;
+	while (n[i])
+		i++;
+	return (i);
 }

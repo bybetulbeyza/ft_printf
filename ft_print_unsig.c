@@ -6,7 +6,13 @@
 /*   By: betdemir@student.42istanbul.com.tr         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/13 16:58:01 by betdemir          #+#    #+#             */
-/*   Updated: 2026/09/13 16:58:02 by betdemir         ###   ########.fr       */
+/*   Updated: 2026/09/16 20:50:29 by betdemir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "ft_printf.h"
+
+int	ft_print_unsig(unsigned int n)
+{
+	return ();
+}

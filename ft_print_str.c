@@ -6,7 +6,26 @@
 /*   By: betdemir@student.42istanbul.com.tr         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/13 16:58:10 by betdemir          #+#    #+#             */
-/*   Updated: 2026/09/13 16:58:11 by betdemir         ###   ########.fr       */
+/*   Updated: 2026/09/16 21:02:50 by betdemir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "ft_printf.h"
+
+int	ft_print_str(char *n)
+{
+	int	i;
+
+	i = 0;
+	if (!n)
+	{
+		write(1, "(null)", 6);
+		return(6);
+	}
+	while(n[i])
+	{
+		write(1, &n[i], 1);
+		i++;
+	}
+	return(i);
+}
