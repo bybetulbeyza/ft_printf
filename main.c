@@ -11,20 +11,12 @@
 /* ************************************************************************** */
 
 #include "ft_printf.h"
-#include <stdio.h> // Orijinal printf'i kullanabilmek için
+#include <stdio.h>
+#include <limits.h> // Sınır değerleri (INT_MIN vb.) için gerekli
 
-int main(void)
+int	main(void)
 {
-    int sayac;
-    int o_sayac;
-    char *test_metni = "Merhaba 42!";
-    
-    sayac = ft_printf("Benimki: Harf %c, Metin %s, Yüzde %%, Adres %p\n", 'A', test_metni, test_metni);
-    
-    o_sayac = printf("Orijinal: Harf %c, Metin %s, Yüzde %%, Adres %p\n", 'A', test_metni, test_metni);
-    
-    printf("\nBenim dondurdugum: %d\n", sayac);
-    printf("Orijinalin dondurdugu: %d\n", o_sayac);
-    
-    return (0);
+	ft_printf("%d\n", -41);
+	printf("%d", -41);
+	return (0);
 }

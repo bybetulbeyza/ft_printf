@@ -14,15 +14,15 @@
 
 static int	ft_ptr_hex(unsigned	long n)
 {
-	int	count;
-	char *base;
-	
+	int		count;
+	char	*base;
+
 	count = 0;
 	base = "0123456789abcdef";
 	if (n >= 16)
 		count += ft_ptr_hex(n / 16);
-	count += write(1, &base[n % 16], 1);
-	return(count);
+	count += ft_print_char(base[n % 16]);
+	return (count);
 }
 
 int	ft_print_ptr(void *n)
@@ -37,6 +37,5 @@ int	ft_print_ptr(void *n)
 	}
 	count += write(1, "0x", 2);
 	count += ft_ptr_hex((unsigned long)n);
-
 	return (count);
 }

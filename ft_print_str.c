@@ -20,12 +20,12 @@ int	ft_print_str(char *n)
 	if (!n)
 	{
 		write(1, "(null)", 6);
-		return(6);
+		return (6);
 	}
-	while(n[i])
+	while (n[i])
 	{
-		write(1, &n[i], 1);
+		ft_print_char(n[i]);
 		i++;
 	}
-	return(i);
+	return (i);
 }

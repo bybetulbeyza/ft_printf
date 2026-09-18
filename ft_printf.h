@@ -17,12 +17,11 @@
 # include <unistd.h>
 # include <stdio.h>
 
-int	ft_handle_format(char c, va_list args);
 int	ft_printf(const char *format, ...);
 int	ft_print_char(int n);
 int	ft_print_hex(unsigned int n, char format);
 int	ft_print_nbr(int n);
-int	ft_print_percent();
+int	ft_print_percent(void);
 int	ft_print_ptr(void *n);
 int	ft_print_str(char *n);
 int	ft_print_unsig(unsigned int n);
